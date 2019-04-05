@@ -32,3 +32,29 @@ export function LPS(s: string): string {
   }
   return s.substring(startIndex, endIndex + 1);
 }
+
+export function LPS2(s: string): string {
+  if (s === '') return '';
+  let start: number = 0;
+  let end: number = 0;
+  let max: number = -Infinity;
+  const { length } = s;
+  function expandAroundCenter(left: number, right: number): number {
+    while (left >= 0 && right < s.length && s[left] === s[right]) {
+      left--;
+      right++;
+    }
+    return right - left - 1;
+  }
+  for (let index: number = 0; index < length; index++) {
+    const len1: number = expandAroundCenter(index, index);
+    const len2: number = expandAroundCenter(index, index + 1);
+    const len: number = Math.max(len1, len2);
+    if (max < len) {
+      max = len;
+      start = index - ((len - 1) / 2 | 0);
+      end = index + (len / 2 | 0);
+    }
+  }
+  return s.substring(start, end + 1);
+}
