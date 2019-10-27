@@ -7,6 +7,12 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "23.merge-k-sorted-lists",
+      "program": "${workspaceFolder}/23.merge-k-sorted-lists.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "18.4-sum.js",
       "program": "${workspaceFolder}/18.4-sum.js"
     },
