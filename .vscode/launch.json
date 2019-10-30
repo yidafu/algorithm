@@ -7,6 +7,18 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "27.remove-element",
+      "program": "${workspaceFolder}/27.remove-element.js"
+    },
+  {
+    "type": "node",
+    "request": "launch",
+    "name": "26.remove-duplicates-from-sorted-array",
+    "program": "${workspaceFolder}/26.remove-duplicates-from-sorted-array.js"
+  },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "25.reverse-nodes-in-k-group",
       "program": "${workspaceFolder}/25.reverse-nodes-in-k-group.js"
     },
