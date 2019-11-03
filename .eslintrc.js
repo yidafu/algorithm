@@ -18,5 +18,6 @@ module.exports = {
         "no-unused-vars": 1,
         "no-continue": 1,
         "no-param-reassign": 0,
+        "no-bitwise": 0,
     }
 };
