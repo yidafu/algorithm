@@ -10,7 +10,7 @@
  * @param {string} needle
  * @return {number}
  */
-const strStr = function(haystack, needle) {
+const strStr = function (haystack, needle) {
   if (needle.length === 0) return 0;
 
   for (let i = 0; i < haystack.length; i++) {

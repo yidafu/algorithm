@@ -22,7 +22,7 @@
  * @param {number} k
  * @return {ListNode}
  */
-const reverseKGroup = function(head, k) {
+const reverseKGroup = function (head, k) {
   if (k === 1) return head;
 
   let newList = null;

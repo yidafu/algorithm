@@ -10,7 +10,7 @@
  * @param {number} val
  * @return {number}
  */
-const removeElement = function(nums, val) {
+const removeElement = function (nums, val) {
   let lastIdx = nums.length;
   for (let i = 0; i < lastIdx; i++) {
     if (nums[i] === val) {
