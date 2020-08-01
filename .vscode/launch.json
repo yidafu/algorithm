@@ -7,7 +7,23 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "38.count-and-say.ts",
+      "program": "${workspaceFolder}/38.count-and-say.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/out/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "37.sudoku-solver.ts",
+      "program": "${workspaceFolder}/37.sudoku-solver.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/out/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "36.valid-sudoku.ts",
       "program": "${workspaceFolder}/36.valid-sudoku.ts",
       "preLaunchTask": "tsc: build - tsconfig.json",
       "outFiles": ["${workspaceFolder}/out/**/*.js"]
