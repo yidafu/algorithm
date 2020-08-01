@@ -7,7 +7,7 @@
 // @lc code=start
 
 function isValidSudoku(board: string[][]): boolean {
-    
+
     const DOT_CHAR = '.';
     const nineSet = new Set();
     const rowLen = board.length;
@@ -24,7 +24,7 @@ function isValidSudoku(board: string[][]): boolean {
                         nineSet.add(num);
                     }
                 }
-        }
+            }
         }
         nineSet.clear();
         return true;
@@ -79,17 +79,3 @@ function isValidSudoku(board: string[][]): boolean {
 };
 
 // @lc code=end
-
-
-const testcase = [
-    [".",".",".",".","5",".",".","1","."],
-    [".","4",".","3",".",".",".",".","."],
-    [".",".",".",".",".","3",".",".","1"],
-    ["8",".",".",".",".",".",".","2","."],
-    [".",".","2",".","7",".",".",".","."],
-    [".","1","5",".",".",".",".",".","."],
-    [".",".",".",".",".","2",".",".","."],
-    [".","2",".","9",".",".",".",".","."],
-    [".",".","4",".",".",".",".",".","."]]
-
-isValidSudoku(testcase);
