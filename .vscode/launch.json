@@ -7,6 +7,14 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "[88] Merge Sorted Array",
+      "program": "${workspaceFolder}/88.merge-sorted-array.ts",
+      "preLaunchTask": "tsc: build - tsconfig.json",
+      "outFiles": ["${workspaceFolder}/out/**/*.js"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "38.count-and-say.ts",
       "program": "${workspaceFolder}/38.count-and-say.ts",
       "preLaunchTask": "tsc: build - tsconfig.json",
